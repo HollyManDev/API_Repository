@@ -2,10 +2,7 @@
 {
     public class DocumentView
     {
-        public int Id { get; set; }
-        public string FileName { get; set; }
-        public string FilePath { get; set; }
-        public DateTime UploadedAt { get; set; }
-        public bool status { get; set; }
+        public IFormFile File { get; set; }  // Propriedade para receber o arquivo no upload
+        public int ConversationId { get; set; }
     }
 }

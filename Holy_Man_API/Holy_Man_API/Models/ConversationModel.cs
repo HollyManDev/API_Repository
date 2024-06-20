@@ -13,9 +13,10 @@ namespace Holy_Man_API.Models
         public bool?  status { get; set; }
 
         // Lista de mensagens na conversa
-        public virtual ICollection<UserModel?> Messages { get; set; }
+        public virtual ICollection<MessageModel?> Messages { get; set; }
 
         // Lista de participantes da conversa
         public virtual ICollection<ConversationParticipantsModel?> Participants { get; set; }
+
     }
 }

@@ -16,7 +16,7 @@ namespace Holy_Man_API.Models
         public bool Status { get; set; }
 
         // Lista de mensagens associadas ao usuário
-        public virtual ICollection<UserModel?> Messages { get; set; }
+        public virtual ICollection<MessageModel?> Messages { get; set; }
 
         // Lista de conversas em que o usuário participa
         public virtual ICollection<ConversationParticipantsModel?> ConversationParticipants { get; set; }

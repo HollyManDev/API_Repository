@@ -13,9 +13,9 @@ namespace Holy_Man_API.Models
         public DateTime? UploadedAt { get; set; }
         public bool? status { get; set; }
 
-        // Chave estrangeira para a Mensagem
-        public int? MessageId { get; set; }
-        [ForeignKey("MessageId")]
-        public virtual UserModel? Message { get; set; }
+        
+        public int? ConversationId { get; set; }
+        [ForeignKey("ConversationId")]
+        public virtual ConversationModel? Conversation { get; set; }
     }
 }

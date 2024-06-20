@@ -13,11 +13,11 @@ namespace Holy_Man_API.Models
         public bool? status { get; set; }
 
         // Chave estrangeira para a Conversa
-        public int? ConversationId { get; set; }
+        public int ConversationId { get; set; }
         [ForeignKey("ConversationId")]
-        public virtual ConversationModel? Conversation { get; set; } 
+        public virtual ConversationModel Conversation { get; set; } 
 
         // Lista de documentos associados à mensagem
-        public virtual ICollection<DocumentModel?> Documents { get; set; } 
+        //public virtual ICollection<DocumentModel?> Documents { get; set; } 
     }
 }

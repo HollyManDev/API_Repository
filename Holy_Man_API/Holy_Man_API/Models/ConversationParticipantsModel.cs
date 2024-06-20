@@ -9,11 +9,11 @@ namespace Holy_Man_API.Models
         public int id { get; set; }
         public int  UserId { get; set; }
         [ForeignKey("UserId")]
-        public virtual UserModel? User { get; set; }
+        public virtual UserModel User { get; set; }
 
         public int? ConversationId { get; set; }
         [ForeignKey("ConversationId")]
-        public virtual ConversationModel? Conversation { get; set; }
+        public virtual ConversationModel Conversation { get; set; }
         public bool  status { get; set; }
     }
 }
