@@ -1,0 +1,778 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\C#\\Holy_Man_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\modelsview\\conversationparticipantsview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\modelsview\\conversationparticipantsview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|d:\\projects\\c#\\holy_man_api\\holy_man_api\\services\\conversationparticipants\\conversationparticipantsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\services\\conversationparticipants\\conversationparticipantsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\controllers\\conversationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\controllers\\conversationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\services\\conversationparticipants\\conversationparticipantsinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\services\\conversationparticipants\\conversationparticipantsinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|d:\\projects\\c#\\holy_man_api\\holy_man_api\\controllers\\participantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\controllers\\participantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\models\\conversationparticipantsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\models\\conversationparticipantsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240620094014_t16.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Holy_Man_API\\Migrations\\20240620094014_t16.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\services\\conversationservice\\conversationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\services\\conversationservice\\conversationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\models\\conversationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\models\\conversationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\datacontext\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\datacontext\\aplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\services\\conversationservice\\conversationinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\services\\conversationservice\\conversationinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\models\\messagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\models\\messagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\services\\messageservice\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\services\\messageservice\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\models\\documentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\models\\documentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\modelsview\\conversationview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\modelsview\\conversationview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\modelsview\\documentview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\modelsview\\documentview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\modelsview\\messageview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\modelsview\\messageview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\services\\userservices\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\services\\userservices\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\services\\userservices\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\services\\userservices\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\services\\documentservice\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\services\\documentservice\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\services\\documentservice\\documentinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\services\\documentservice\\documentinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\modelsview\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\modelsview\\userview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|d:\\projects\\c#\\holy_man_api\\holy_man_api\\migrations\\20240619113802_t8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\migrations\\20240619113802_t8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\serverresponse\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\serverresponse\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\services\\messageservice\\messageinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\services\\messageservice\\messageinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\migrations\\20240619102429_t4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\migrations\\20240619102429_t4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\holy_man_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\holy_man_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\migrations\\20240617161815_test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\migrations\\20240617161815_test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\migrations\\20240617153349_testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\migrations\\20240617153349_testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\migrations\\aplicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\migrations\\aplicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\migrations\\20240617095335_first-migration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\migrations\\20240617095335_first-migration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\holy_man_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\holy_man_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617112753_Third-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:Holy_Man_API\\Migrations\\20240617112753_Third-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617105437_second-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:Holy_Man_API\\Migrations\\20240617105437_second-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617095335_first-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:Holy_Man_API\\Migrations\\20240617095335_first-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240619083049_t3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:Holy_Man_API\\Migrations\\20240619083049_t3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|D:\\Projects\\C#\\Holy_Man_API\\holy_man_api\\migrations\\20240619130014_t11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4DD58F4-9BD0-40A0-B9D2-1264B3AECD64}|Holy_Man_API\\Holy_Man_API.csproj|solutionrelative:holy_man_api\\migrations\\20240619130014_t11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 387,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ParticipantsController.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Controllers\\ParticipantsController.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Controllers\\ParticipantsController.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Controllers\\ParticipantsController.cs",
+              "RelativeToolTip": "Holy_Man_API\\Controllers\\ParticipantsController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAiwCcAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T08:26:08.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConversationParticipantsInterface.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\ConversationParticipants\\ConversationParticipantsInterface.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Services\\ConversationParticipants\\ConversationParticipantsInterface.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\ConversationParticipants\\ConversationParticipantsInterface.cs",
+              "RelativeToolTip": "Holy_Man_API\\Services\\ConversationParticipants\\ConversationParticipantsInterface.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAACRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T04:42:24.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConversationParticipantsServices.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\ConversationParticipants\\ConversationParticipantsServices.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Services\\ConversationParticipants\\ConversationParticipantsServices.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\ConversationParticipants\\ConversationParticipantsServices.cs",
+              "RelativeToolTip": "Holy_Man_API\\Services\\ConversationParticipants\\ConversationParticipantsServices.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwFkAAABuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T04:41:45.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConversationParticipantsView.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\ModelsView\\ConversationParticipantsView.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\ModelsView\\ConversationParticipantsView.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\ModelsView\\ConversationParticipantsView.cs",
+              "RelativeToolTip": "Holy_Man_API\\ModelsView\\ConversationParticipantsView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T14:12:44.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConversationController.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Controllers\\ConversationController.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Controllers\\ConversationController.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Controllers\\ConversationController.cs",
+              "RelativeToolTip": "Holy_Man_API\\Controllers\\ConversationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAACGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T13:21:06.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ConversationInterface.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\ConversationService\\ConversationInterface.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Services\\ConversationService\\ConversationInterface.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\ConversationService\\ConversationInterface.cs",
+              "RelativeToolTip": "Holy_Man_API\\Services\\ConversationService\\ConversationInterface.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T12:27:24.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConversationService.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\ConversationService\\ConversationService.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Services\\ConversationService\\ConversationService.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\ConversationService\\ConversationService.cs",
+              "RelativeToolTip": "Holy_Man_API\\Services\\ConversationService\\ConversationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T12:26:45.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DocumentController.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Controllers\\DocumentController.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Controllers\\DocumentController.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Controllers\\DocumentController.cs",
+              "RelativeToolTip": "Holy_Man_API\\Controllers\\DocumentController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwB4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T11:50:01.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DocumentService.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\DocumentService\\DocumentService.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Services\\DocumentService\\DocumentService.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\DocumentService\\DocumentService.cs",
+              "RelativeToolTip": "Holy_Man_API\\Services\\DocumentService\\DocumentService.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAgwFQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T11:23:11.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DocumentInterface.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\DocumentService\\DocumentInterface.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Services\\DocumentService\\DocumentInterface.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\DocumentService\\DocumentInterface.cs",
+              "RelativeToolTip": "Holy_Man_API\\Services\\DocumentService\\DocumentInterface.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T11:22:46.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MessageController.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Controllers\\MessageController.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Controllers\\MessageController.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Controllers\\MessageController.cs",
+              "RelativeToolTip": "Holy_Man_API\\Controllers\\MessageController.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAIwDAAAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T10:26:53.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20240619102429_t4.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240619102429_t4.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Migrations\\20240619102429_t4.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240619102429_t4.cs",
+              "RelativeToolTip": "Holy_Man_API\\Migrations\\20240619102429_t4.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T10:25:04.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20240619083049_t3.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240619083049_t3.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Migrations\\20240619083049_t3.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240619083049_t3.cs",
+              "RelativeToolTip": "Holy_Man_API\\Migrations\\20240619083049_t3.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:30:54.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MessageService.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\MessageService\\MessageService.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Services\\MessageService\\MessageService.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\MessageService\\MessageService.cs",
+              "RelativeToolTip": "Holy_Man_API\\Services\\MessageService\\MessageService.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAmwJYAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T07:45:30.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MessageInterface.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\MessageService\\MessageInterface.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Services\\MessageService\\MessageInterface.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\MessageService\\MessageInterface.cs",
+              "RelativeToolTip": "Holy_Man_API\\Services\\MessageService\\MessageInterface.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T07:42:31.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ConversationView.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\ModelsView\\ConversationView.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\ModelsView\\ConversationView.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\ModelsView\\ConversationView.cs",
+              "RelativeToolTip": "Holy_Man_API\\ModelsView\\ConversationView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T07:37:13.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DocumentView.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\ModelsView\\DocumentView.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\ModelsView\\DocumentView.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\ModelsView\\DocumentView.cs",
+              "RelativeToolTip": "Holy_Man_API\\ModelsView\\DocumentView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T07:37:10.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MessageView.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\ModelsView\\MessageView.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\ModelsView\\MessageView.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\ModelsView\\MessageView.cs",
+              "RelativeToolTip": "Holy_Man_API\\ModelsView\\MessageView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T07:36:50.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserView.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\ModelsView\\UserView.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\ModelsView\\UserView.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\ModelsView\\UserView.cs",
+              "RelativeToolTip": "Holy_Man_API\\ModelsView\\UserView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T18:57:57.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20240617161815_test1.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617161815_test1.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Migrations\\20240617161815_test1.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617161815_test1.cs",
+              "RelativeToolTip": "Holy_Man_API\\Migrations\\20240617161815_test1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T16:18:29.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20240617153349_Testing.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617153349_Testing.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Migrations\\20240617153349_Testing.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617153349_Testing.cs",
+              "RelativeToolTip": "Holy_Man_API\\Migrations\\20240617153349_Testing.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T15:34:06.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20240617112753_Third-migration.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617112753_Third-migration.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Migrations\\20240617112753_Third-migration.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617112753_Third-migration.cs",
+              "RelativeToolTip": "Holy_Man_API\\Migrations\\20240617112753_Third-migration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T11:27:54.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "20240617105437_second-migration.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617105437_second-migration.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Migrations\\20240617105437_second-migration.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617105437_second-migration.cs",
+              "RelativeToolTip": "Holy_Man_API\\Migrations\\20240617105437_second-migration.cs",
+              "ViewState": "AQIAALUAAAAAAAAAAAAAANcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T10:54:37.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\AplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Migrations\\AplicationDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\AplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Holy_Man_API\\Migrations\\AplicationDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T10:49:53.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20240617095335_first-migration.Designer.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617095335_first-migration.Designer.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Migrations\\20240617095335_first-migration.Designer.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617095335_first-migration.Designer.cs",
+              "RelativeToolTip": "Holy_Man_API\\Migrations\\20240617095335_first-migration.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T10:49:29.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Holy_Man_API.http",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.http",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Holy_Man_API.http",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.http",
+              "RelativeToolTip": "Holy_Man_API\\Holy_Man_API.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-06-17T10:45:55.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConversationParticipantsModel.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Models\\ConversationParticipantsModel.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Models\\ConversationParticipantsModel.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Models\\ConversationParticipantsModel.cs",
+              "RelativeToolTip": "Holy_Man_API\\Models\\ConversationParticipantsModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T10:27:00.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DocumentModel.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Models\\DocumentModel.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Models\\DocumentModel.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Models\\DocumentModel.cs",
+              "RelativeToolTip": "Holy_Man_API\\Models\\DocumentModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T10:25:29.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MessageModel.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Models\\MessageModel.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Models\\MessageModel.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Models\\MessageModel.cs",
+              "RelativeToolTip": "Holy_Man_API\\Models\\MessageModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T10:02:44.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ConversationModel.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Models\\ConversationModel.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Models\\ConversationModel.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Models\\ConversationModel.cs",
+              "RelativeToolTip": "Holy_Man_API\\Models\\ConversationModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T10:01:47.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20240617095335_first-migration.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617095335_first-migration.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Migrations\\20240617095335_first-migration.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240617095335_first-migration.cs",
+              "RelativeToolTip": "Holy_Man_API\\Migrations\\20240617095335_first-migration.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAA8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T09:53:47.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserInterface.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\UserServices\\UserInterface.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Services\\UserServices\\UserInterface.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\UserServices\\UserInterface.cs",
+              "RelativeToolTip": "Holy_Man_API\\Services\\UserServices\\UserInterface.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T05:17:07.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\UserServices\\UserService.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Services\\UserServices\\UserService.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Services\\UserServices\\UserService.cs",
+              "RelativeToolTip": "Holy_Man_API\\Services\\UserServices\\UserService.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAIwHQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T05:16:48.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Holy_Man_API\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAswDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T05:06:32.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ServiceResponse.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\ServerResponse\\ServiceResponse.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\ServerResponse\\ServiceResponse.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\ServerResponse\\ServiceResponse.cs",
+              "RelativeToolTip": "Holy_Man_API\\ServerResponse\\ServiceResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T04:58:52.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Program.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Program.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Program.cs",
+              "RelativeToolTip": "Holy_Man_API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T04:47:19.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\appsettings.json",
+              "RelativeDocumentMoniker": "Holy_Man_API\\appsettings.json",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\appsettings.json",
+              "RelativeToolTip": "Holy_Man_API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-17T04:47:18.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Models\\UserModel.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Models\\UserModel.cs",
+              "RelativeToolTip": "Holy_Man_API\\Models\\UserModel.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAIA4wBUAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T04:47:18.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\DataContext\\AplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\DataContext\\AplicationDbContext.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\DataContext\\AplicationDbContext.cs",
+              "RelativeToolTip": "Holy_Man_API\\DataContext\\AplicationDbContext.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowBQAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T04:46:35.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Holy_Man_API.csproj",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Holy_Man_API.csproj",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj",
+              "RelativeToolTip": "Holy_Man_API\\Holy_Man_API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-17T04:46:29.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Holy_Man_API\\Properties\\launchSettings.json",
+              "ViewState": "AQIAABQAAAAAAAAAAAAowCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-14T13:08:47.288Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 13,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20240620094014_t16.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240620094014_t16.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Migrations\\20240620094014_t16.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240620094014_t16.cs",
+              "RelativeToolTip": "Holy_Man_API\\Migrations\\20240620094014_t16.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T09:40:21.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20240619113802_t8.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240619113802_t8.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Migrations\\20240619113802_t8.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240619113802_t8.cs",
+              "RelativeToolTip": "Holy_Man_API\\Migrations\\20240619113802_t8.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T11:38:06.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20240619130014_t11.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240619130014_t11.cs",
+              "RelativeDocumentMoniker": "Holy_Man_API\\Migrations\\20240619130014_t11.cs",
+              "ToolTip": "D:\\Projects\\C#\\Holy_Man_API\\Holy_Man_API\\Migrations\\20240619130014_t11.cs",
+              "RelativeToolTip": "Holy_Man_API\\Migrations\\20240619130014_t11.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T13:00:18.87Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
