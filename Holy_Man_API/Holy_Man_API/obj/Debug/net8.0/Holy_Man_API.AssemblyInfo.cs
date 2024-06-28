@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Holy_Man_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb5c1fdd368e28d3ecd934287843155a99ea1179")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffae30d1b21f5375c26c9908a0e9a2dc0a998b1b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Holy_Man_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Holy_Man_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

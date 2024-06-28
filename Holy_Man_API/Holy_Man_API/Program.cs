@@ -1,4 +1,3 @@
-
 using Holy_Man_API.Models;
 using Holy_Man_API.Services.ConversationParticipants;
 using Holy_Man_API.Services.ConversationService;
@@ -9,10 +8,8 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Adicionar serviços ao contêiner.
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<UserInterface, UserService>();
@@ -26,18 +23,31 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+// Configuração do CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:4200")
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure o pipeline de solicitação HTTP.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// Aplicar o middleware de CORS
+app.UseCors("AllowSpecificOrigin");
 
+app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
