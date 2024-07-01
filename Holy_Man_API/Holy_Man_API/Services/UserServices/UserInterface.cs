@@ -13,6 +13,8 @@ namespace Holy_Man_API.Services.UserServices
         Task<ServiceResponse<List<UserModel>>> UpdateUser(UserView UpdateUser);
         Task<ServiceResponse<List<UserModel>>> InactivateUSER(int id);
         Task<ServiceResponse<List<UserModel>>> ActivateUSER(int id);
+        Task<ServiceResponse<UserModel>> AuthenticateUser(string email, string password);
+    
 
 
 

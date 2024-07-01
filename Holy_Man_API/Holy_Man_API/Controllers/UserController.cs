@@ -65,5 +65,30 @@ namespace Holy_Man_API.Controllers
             return Ok(await _userInterface.CreateUser(newUser));
         }
 
+           [HttpPost("authenticate")]
+        public async Task<ActionResult<ServiceResponse<UserModel>>> AuthenticateUser(UserAuthView userCredentials)
+        {
+            var response = await _userInterface.AuthenticateUser(userCredentials.Email, userCredentials.Password);
+            
+            if (response.Success && response.Data != null)
+            {
+                return Ok(new ServiceResponse<UserModel>
+                {
+                    Data = response.Data,
+                    menssage = "User authenticated successfully.",
+                    Success = true
+                });
+            }
+            else
+            {
+                return Unauthorized(new ServiceResponse<UserModel>
+                {
+                    Data = null,
+                    menssage = response.menssage, // Mensagem de erro da autenticação
+                    Success = false
+                });
+            }
+        }
+
     }
 }

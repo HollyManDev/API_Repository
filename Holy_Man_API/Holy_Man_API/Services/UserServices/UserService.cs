@@ -206,5 +206,38 @@ namespace Holy_Man_API.Services.UserServices
 
             return serviceResponse;
         }
+        public async Task<ServiceResponse<UserModel>> AuthenticateUser(string email, string password)
+        {
+            ServiceResponse<UserModel> serviceResponse = new ServiceResponse<UserModel>();
+
+            try
+            {
+                // Procura o usuário pelo email na base de dados
+                UserModel user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+
+                // Verifica se o usuário foi encontrado e se a senha está correta
+                if (user == null || user.Password != password || user.Status != true)
+                {
+                    serviceResponse.Data = null;
+                    serviceResponse.menssage = "Invalid email or password.";
+                    serviceResponse.Success = false;
+                }
+                else
+                {
+                    // Se o usuário foi encontrado e a senha está correta, retorna o usuário
+                    serviceResponse.Data = user;
+                    serviceResponse.menssage = "User authenticated successfully.";
+                    serviceResponse.Success = true;
+                   
+                }
+            }
+            catch (Exception ex)
+            {
+                serviceResponse.menssage = ex.Message;
+                serviceResponse.Success = false;
+            }
+
+            return serviceResponse;
+        }
     }
 }

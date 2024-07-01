@@ -52,10 +52,13 @@ namespace Holy_Man_API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
 
-                    b.Property<int?>("ConversationId")
+                    b.Property<int>("ConversationId")
                         .HasColumnType("int");
 
                     b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("senderId")
                         .HasColumnType("int");
 
                     b.Property<bool>("status")
@@ -175,7 +178,9 @@ namespace Holy_Man_API.Migrations
                 {
                     b.HasOne("Holy_Man_API.Models.ConversationModel", "Conversation")
                         .WithMany("Participants")
-                        .HasForeignKey("ConversationId");
+                        .HasForeignKey("ConversationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Holy_Man_API.Models.UserModel", "User")
                         .WithMany("ConversationParticipants")
