@@ -17,7 +17,7 @@ namespace Holy_Man_API.Services.DocumentService
             _context = context;
         }
 
-        public async Task<ServiceResponse<DocumentModel>> UploadDocument(IFormFile file, int id)
+        public async Task<ServiceResponse<DocumentModel>> UploadDocument(IFormFile file, int id, int userId)
         {
             var serviceResponse = new ServiceResponse<DocumentModel>();
 
@@ -35,7 +35,8 @@ namespace Holy_Man_API.Services.DocumentService
                     FileName = Path.GetFileName(file.FileName),
                     UploadedAt = DateTime.Now,
                     ConversationId = id,
-                    status = true
+                    status = true,
+                    UserId = userId,
                 };
 
                 var directoryPath = Path.Combine(Directory.GetCurrentDirectory(), "UploadedDocuments");
@@ -46,13 +47,16 @@ namespace Holy_Man_API.Services.DocumentService
                     Directory.CreateDirectory(directoryPath);
                 }
 
-                ////var filePath = Path.Combine(directoryPath, document.FileName);
+                var filePath = Path.Combine(directoryPath, document.FileName);
 
                 // Salvar o arquivo no disco
-                //using (var stream = new FileStream(filePath, FileMode.Create))
-                //{
-                //    await file.CopyToAsync(stream);
-                //}
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+
+                // Atualizar o caminho do arquivo no objeto document
+                document.FilePath = filePath;
 
                 // Salvar informações do documento no banco de dados
                 _context.Documents.Add(document);

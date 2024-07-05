@@ -88,12 +88,16 @@ namespace Holy_Man_API.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FilePath")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("UploadedAt")
+                    b.Property<DateTime>("UploadedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool?>("status")
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("status")
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
@@ -119,6 +123,9 @@ namespace Holy_Man_API.Migrations
 
                     b.Property<DateTime?>("SentAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
                     b.Property<int?>("UserModelId")
                         .HasColumnType("int");

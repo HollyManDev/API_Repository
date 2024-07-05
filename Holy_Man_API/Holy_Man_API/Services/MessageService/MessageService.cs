@@ -64,7 +64,8 @@ namespace Holy_Man_API.Services.MessageService
                         Content = newMessage.Content,
                         SentAt = DateTime.Now.ToLocalTime(),
                         ConversationId = newMessage.idConversation,
-                        status = newMessage.status
+                        status = newMessage.status,
+                        UserId = newMessage.UserId
                     };
 
                     _context.Messages.Add(messageModel);

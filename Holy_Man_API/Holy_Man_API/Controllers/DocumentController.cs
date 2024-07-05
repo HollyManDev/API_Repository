@@ -29,7 +29,7 @@ namespace Holy_Man_API.Controllers
                 return BadRequest("No file uploaded.");
             }
 
-            var serviceResponse = await _documentService.UploadDocument(documentView.File, documentView.ConversationId);
+            var serviceResponse = await _documentService.UploadDocument(documentView.File, documentView.ConversationId, documentView.UserId);
             if (!serviceResponse.Success)
             {
                 return BadRequest(serviceResponse);

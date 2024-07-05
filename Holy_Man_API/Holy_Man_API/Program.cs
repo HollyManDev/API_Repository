@@ -1,8 +1,11 @@
 using Holy_Man_API.Models;
+using Holy_Man_API.Services.All_User_Participants_Conversations;
 using Holy_Man_API.Services.ConversationParticipants;
 using Holy_Man_API.Services.ConversationService;
 using Holy_Man_API.Services.DocumentService;
 using Holy_Man_API.Services.MessageService;
+using Holy_Man_API.Services.UserContentService;
+using Holy_Man_API.Services.UserContentServices;
 using Holy_Man_API.Services.UserServices;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,6 +20,10 @@ builder.Services.AddScoped<MessageInterface, MessageService>();
 builder.Services.AddScoped<DocumentInterface, DocumentService>();
 builder.Services.AddScoped<ConversationInterface, ConversationService>();
 builder.Services.AddScoped<ConversationParticipantsInterface, ConversationParticipantsServices>();
+builder.Services.AddScoped<UserContentInterfacecs, UserContentService>();
+builder.Services.AddScoped<All_User_Conversation_Participnts_Services>();
+builder.Services.AddScoped<All_User_Conversation_Participnts_Interface, All_User_Conversation_Participnts_Services>();
+
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {

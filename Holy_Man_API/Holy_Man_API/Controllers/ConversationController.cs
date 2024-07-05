@@ -2,8 +2,9 @@
 using Holy_Man_API.Models;
 using Holy_Man_API.ServerResponse;
 using Holy_Man_API.Services.ConversationService;
-using Microsoft.AspNetCore.Http;
+using Holy_Man_API.Services.All_User_Participants_Conversations; 
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace Holy_Man_API.Controllers
 {
@@ -12,6 +13,7 @@ namespace Holy_Man_API.Controllers
     public class ConversationController : ControllerBase
     {
         private readonly ConversationInterface _conversationService;
+        
 
         public ConversationController(ConversationInterface conversationService)
         {
@@ -25,7 +27,7 @@ namespace Holy_Man_API.Controllers
             return Ok(serviceResponse);
         }
 
-        [HttpGet("{id} Search")]
+        [HttpGet("{id}", Name = "Search")]
         public async Task<ActionResult<ServiceResponse<ConversationModel>>> GetConversation(int id)
         {
             var serviceResponse = await _conversationService.GetConversation(id);
@@ -45,18 +47,19 @@ namespace Holy_Man_API.Controllers
             return Ok(serviceResponse);
         }
 
-        [HttpPut ("Update")]
+        [HttpPut("Update")]
         public async Task<ActionResult<ServiceResponse<List<ConversationModel>>>> UpdateConversation(ConversationView updatedConversation)
         {
             var serviceResponse = await _conversationService.UpdateConversation(updatedConversation);
             return Ok(serviceResponse);
         }
 
-        [HttpPut("{id} Delete")]
+        [HttpPut("{id}/Delete")]
         public async Task<ActionResult<ServiceResponse<List<ConversationModel>>>> DeleteConversation(int id)
         {
             var serviceResponse = await _conversationService.DeleteConversation(id);
             return Ok(serviceResponse);
         }
+
     }
 }
