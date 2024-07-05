@@ -24,35 +24,36 @@ namespace Holy_Man_API.Services.UserContentService
 
             try
             {
-                // Obter a conversa entre userId e participantId
-                var conversationParticipant = await (from conversationBetweenUsers in _context.ConversationParticipants
-                                                     where conversationBetweenUsers.status == true
-                                                     join participant in _context.ConversationParticipants on
-                                                     conversationBetweenUsers.id equals participant.ConversationId
-                                                     join user in _context.Users on participant.UserId equals user.Id select conversationBetweenUsers.ConversationId).ToListAsync();
-                    
+                // Consulta para obter a conversa entre userId e participantId
+                var conversation = await (from conv in _context.Conversations
+                                          join cp1 in _context.ConversationParticipants
+                                              on conv.Id equals cp1.ConversationId
+                                          join cp2 in _context.ConversationParticipants
+                                              on conv.Id equals cp2.ConversationId
+                                          where cp1.UserId == userId
+                                              && cp2.UserId == participantId
+                                              && conv.status == true
+                                          select conv)
+                                          .FirstOrDefaultAsync();
 
-                                              
-                if (conversationParticipant == null)
+                if (conversation == null)
                 {
                     serviceResponse.menssage = "Conversation not found.";
                     serviceResponse.Success = false;
                     return serviceResponse;
                 }
 
-               
-
                 // Agora buscar as mensagens e documentos relacionados à conversa
                 var userContent = new UserContent
                 {
                     UserId = userId,
                     ParticipantId = participantId,
-                    ConversationId = conversationParticipant, // Adicionando o ID da conversa
+                    ConversationId = conversation.Id, // Adicionando o ID da conversa
                     Messages = await _context.Messages
-                                        .Where(m => m.ConversationId == conversationId)
+                                        .Where(m => m.ConversationId == conversation.Id)
                                         .ToListAsync(),
                     Documents = await _context.Documents
-                                        .Where(d => d.ConversationId == conversationId)
+                                        .Where(d => d.ConversationId == conversation.Id)
                                         .ToListAsync()
                     // Adicione mais lógica conforme necessário para recuperar outros dados da conversa
                 };

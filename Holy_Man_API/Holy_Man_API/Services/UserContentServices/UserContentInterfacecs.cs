@@ -6,6 +6,6 @@ namespace Holy_Man_API.Services.UserContentServices
 {
     public interface UserContentInterfacecs
     {
-        Task<ServiceResponse<UserContent>> GetConversationContent(int userId);
+        Task<ServiceResponse<UserContent>> GetConversationContent(int userId, int participantId);
     }
 }

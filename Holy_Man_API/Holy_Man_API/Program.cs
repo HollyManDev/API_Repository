@@ -8,11 +8,22 @@ using Holy_Man_API.Services.UserContentService;
 using Holy_Man_API.Services.UserContentServices;
 using Holy_Man_API.Services.UserServices;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Adicionar serviços ao contêiner.
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+        options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+        options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+    });
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<UserInterface, UserService>();
@@ -24,7 +35,7 @@ builder.Services.AddScoped<UserContentInterfacecs, UserContentService>();
 builder.Services.AddScoped<All_User_Conversation_Participnts_Services>();
 builder.Services.AddScoped<All_User_Conversation_Participnts_Interface, All_User_Conversation_Participnts_Services>();
 
-
+// Configuração do DbContext para o Entity Framework Core
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
