@@ -19,7 +19,7 @@ namespace Holy_Man_API.Controllers
 
         [HttpGet("User/{userId}/ConversationsWithParticipants")]
         public async Task<ActionResult<ServiceResponse<AllUserConversationParticipants>>> GetConversationsWithParticipants(int userId)
-        {
+         {
             var serviceResponse = await _allUserConversationService.GetConversationsWithParticipants(userId);
 
             if (!serviceResponse.Success)

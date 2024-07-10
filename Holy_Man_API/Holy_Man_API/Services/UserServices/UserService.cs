@@ -115,11 +115,11 @@ namespace Holy_Man_API.Services.UserServices
             return serviceResponse;
         }
 
-        public async Task<ServiceResponse<List<UserModel>>> GetUsers()
+       public async Task<ServiceResponse<List<UserModel>>> GetUsers()
         {
             ServiceResponse<List<UserModel>> serviceResponse = new ServiceResponse<List<UserModel>>();
 
-            try
+            try 
             {
 
                 serviceResponse.Data = _context.Users.ToList(); 

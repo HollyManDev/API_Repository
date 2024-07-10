@@ -54,7 +54,7 @@ namespace Holy_Man_API.Controllers
 
         [HttpPost]
         public async Task<ActionResult<ServiceResponse<List<MessageModel>>>> CreateMessage(MessageView newMessage)
-        {
+         {
             var serviceResponse = await _messageService.CreateMessage(newMessage);
             return Ok(serviceResponse);
         }

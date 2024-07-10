@@ -15,13 +15,14 @@ namespace Holy_Man_API.Controllers
             _userContentService = userContentService;
         }
 
-        [HttpGet("{userId}/content/ {participantId}")]
+        [HttpGet("{userId}/content/{participantId}")]
         public async Task<IActionResult> GetUserContent(int userId, int participantId)
         {
             var userContent = await _userContentService.GetConversationContent(userId, participantId);
             if (!userContent.Success)
             {
-                return NotFound(userContent);
+            
+      NotFound(userContent);
             }
             return Ok(userContent);
         }
