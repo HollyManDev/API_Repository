@@ -30,13 +30,14 @@ namespace Holy_Man_API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime?>("CreatedAt")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool?>("status")
+                    b.Property<bool>("status")
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
@@ -81,10 +82,11 @@ namespace Holy_Man_API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("ConversationId")
+                    b.Property<int>("ConversationId")
                         .HasColumnType("int");
 
                     b.Property<string>("FileName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FilePath")
@@ -116,12 +118,13 @@ namespace Holy_Man_API.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Content")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ConversationId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("SentAt")
+                    b.Property<DateTime>("SentAt")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("UserId")
@@ -130,7 +133,7 @@ namespace Holy_Man_API.Migrations
                     b.Property<int?>("UserModelId")
                         .HasColumnType("int");
 
-                    b.Property<bool?>("status")
+                    b.Property<bool>("status")
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
@@ -184,7 +187,7 @@ namespace Holy_Man_API.Migrations
             modelBuilder.Entity("Holy_Man_API.Models.ConversationParticipantsModel", b =>
                 {
                     b.HasOne("Holy_Man_API.Models.ConversationModel", "Conversation")
-                        .WithMany("Participants")
+                        .WithMany()
                         .HasForeignKey("ConversationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -204,7 +207,9 @@ namespace Holy_Man_API.Migrations
                 {
                     b.HasOne("Holy_Man_API.Models.ConversationModel", "Conversation")
                         .WithMany()
-                        .HasForeignKey("ConversationId");
+                        .HasForeignKey("ConversationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Conversation");
                 });
@@ -212,7 +217,7 @@ namespace Holy_Man_API.Migrations
             modelBuilder.Entity("Holy_Man_API.Models.MessageModel", b =>
                 {
                     b.HasOne("Holy_Man_API.Models.ConversationModel", "Conversation")
-                        .WithMany("Messages")
+                        .WithMany()
                         .HasForeignKey("ConversationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -222,13 +227,6 @@ namespace Holy_Man_API.Migrations
                         .HasForeignKey("UserModelId");
 
                     b.Navigation("Conversation");
-                });
-
-            modelBuilder.Entity("Holy_Man_API.Models.ConversationModel", b =>
-                {
-                    b.Navigation("Messages");
-
-                    b.Navigation("Participants");
                 });
 
             modelBuilder.Entity("Holy_Man_API.Models.UserModel", b =>

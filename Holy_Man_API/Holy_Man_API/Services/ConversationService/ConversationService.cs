@@ -2,10 +2,14 @@
 using Holy_Man_API.ModelsView;
 using Holy_Man_API.ServerResponse;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Holy_Man_API.Services.ConversationService
 {
-    public class ConversationService: ConversationInterface
+    public class ConversationService : ConversationInterface
     {
         private readonly ApplicationDbContext _context;
 
@@ -64,10 +68,9 @@ namespace Holy_Man_API.Services.ConversationService
             return serviceResponse;
         }
 
-        public async Task<ServiceResponse<List<ConversationModel>>> CreateConversation(ConversationView newConversation)
+        public async Task<ServiceResponse<int>> CreateConversation(ConversationView newConversation)
         {
-            var serviceResponse = new ServiceResponse<List<ConversationModel>>();
-            var conversation = new ConversationModel();
+            var serviceResponse = new ServiceResponse<int>();
 
             try
             {
@@ -78,16 +81,28 @@ namespace Holy_Man_API.Services.ConversationService
                     return serviceResponse;
                 }
 
-              
+                var conversation = new ConversationModel
+                {
+                    Title = newConversation.Title,
+                    CreatedAt = DateTime.Now,
+                    status = true
+                };
 
-                conversation.Title = newConversation.Title;
-                conversation.CreatedAt = DateTime.Now;
-                conversation.status = true;
-                  
                 _context.Conversations.Add(conversation);
                 await _context.SaveChangesAsync();
 
-                serviceResponse.Data = await _context.Conversations.ToListAsync();
+                // Busca o ID da conversa pelo título após salvar
+                var savedConversation = await _context.Conversations
+                    .FirstOrDefaultAsync(c => c.Title == newConversation.Title);
+
+                if (savedConversation == null)
+                {
+                    serviceResponse.menssage = "Failed to retrieve conversation ID after creation.";
+                    serviceResponse.Success = false;
+                    return serviceResponse;
+                }
+
+                serviceResponse.Data = savedConversation.Id;
                 serviceResponse.Success = true;
             }
             catch (Exception ex)
@@ -146,17 +161,13 @@ namespace Holy_Man_API.Services.ConversationService
                     serviceResponse.Success = false;
                     return serviceResponse;
                 }
-                else
-                {
-                    conversation.status = false;
-                    _context.Conversations.Update(conversation);
-                    await _context.SaveChangesAsync();
 
-                    serviceResponse.Data = await _context.Conversations.ToListAsync();
-                    serviceResponse.Success = true;
-                }
+                conversation.status = false;
+                _context.Conversations.Update(conversation);
+                await _context.SaveChangesAsync();
 
-                
+                serviceResponse.Data = await _context.Conversations.ToListAsync();
+                serviceResponse.Success = true;
             }
             catch (Exception ex)
             {

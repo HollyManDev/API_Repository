@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public string Content { get; set; }
-        public DateTime? SentAt { get; set; }
+        public DateTime SentAt { get; set; }
         public int idConversation { get; set; }
         public bool status { get; set; }
         public int UserId { get; set; }

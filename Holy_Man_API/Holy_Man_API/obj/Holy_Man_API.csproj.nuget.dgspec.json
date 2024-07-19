@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\C#\\API_Repository\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj": {}
+    "C:\\Users\\Holy Man\\Desktop\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\C#\\API_Repository\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj": {
+    "C:\\Users\\Holy Man\\Desktop\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\C#\\API_Repository\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj",
+        "projectUniqueName": "C:\\Users\\Holy Man\\Desktop\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj",
         "projectName": "Holy_Man_API",
-        "projectPath": "D:\\Projects\\C#\\API_Repository\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj",
+        "projectPath": "C:\\Users\\Holy Man\\Desktop\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj",
         "packagesPath": "C:\\Users\\Holy Man\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\C#\\API_Repository\\Holy_Man_API\\Holy_Man_API\\obj\\",
+        "outputPath": "C:\\Users\\Holy Man\\Desktop\\Holy_Man_API\\Holy_Man_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

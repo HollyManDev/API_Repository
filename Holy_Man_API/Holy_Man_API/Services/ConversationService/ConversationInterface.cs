@@ -8,7 +8,7 @@ namespace Holy_Man_API.Services.ConversationService
     {
         Task<ServiceResponse<List<ConversationModel>>> GetConversations();
         Task<ServiceResponse<ConversationModel>> GetConversation(int id);
-        Task<ServiceResponse<List<ConversationModel>>> CreateConversation(ConversationView newConversation);
+        Task<ServiceResponse<int>> CreateConversation(ConversationView newConversation);
         Task<ServiceResponse<List<ConversationModel>>> UpdateConversation(ConversationView updatedConversation);
         Task<ServiceResponse<List<ConversationModel>>> DeleteConversation(int id);
     }

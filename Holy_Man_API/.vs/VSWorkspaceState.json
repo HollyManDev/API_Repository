@@ -1,12 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers",
-    "\\ModelsView",
-    "\\Services",
-    "\\Services\\DocumentService",
-    "\\Services\\UserServices"
+    "\\Holy_Man_API",
+    "\\Holy_Man_API\\ModelsView"
   ],
-  "SelectedNode": "\\ModelsView\\DocumentView.cs",
+  "SelectedNode": "\\Holy_Man_API.sln",
   "PreviewInSolutionExplorer": false
 }
