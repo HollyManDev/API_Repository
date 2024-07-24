@@ -29,11 +29,13 @@ namespace Holy_Man_API.Services.UserServices
                     serviceResponse.Success = false;
                 }
 
-                gotUser.Status = true;
-                _context.Update(gotUser);
-                await _context.SaveChangesAsync();
-                serviceResponse.Data = _context.Users.ToList();
-
+                else
+                {
+                    gotUser.Status = true;
+                    _context.Update(gotUser);
+                    await _context.SaveChangesAsync();
+                    serviceResponse.Data = _context.Users.ToList();
+                }
             }
             catch (Exception ex)
             {
@@ -63,7 +65,7 @@ namespace Holy_Man_API.Services.UserServices
                 }
                 else
                 {
-                    userModel.Id = newUser.Id; 
+               
                     userModel.Lastname = newUser.Lastname;
                     userModel.Firstname = newUser.Firstname;
                     userModel.Gender = newUser.Gender;
@@ -71,6 +73,9 @@ namespace Holy_Man_API.Services.UserServices
                     userModel.Email = newUser.Email;
                     userModel.Password = newUser.Password;
                     userModel.Status = newUser.Status;
+                    userModel.DepartmentId = newUser.DepartmentId;
+                    userModel.Acess = newUser.Acess;
+
                     _context.Add(userModel);
                     await _context.SaveChangesAsync();
                     serviceResponse.Data = _context.Users.ToList(); 
@@ -152,11 +157,14 @@ namespace Holy_Man_API.Services.UserServices
                     serviceResponse.menssage = "User not found!";
                     serviceResponse.Success = false;
                 }
-
-                gotUser.Status = false;
-                _context.Update(gotUser);
-                await _context.SaveChangesAsync();
-                serviceResponse.Data = _context.Users.ToList();
+                else
+                {
+                    gotUser.Status = false;
+                    _context.Update(gotUser);
+                    await _context.SaveChangesAsync();
+                    serviceResponse.Data = _context.Users.ToList();
+                }
+               
 
             }
             catch (Exception ex)
@@ -191,6 +199,8 @@ namespace Holy_Man_API.Services.UserServices
                     gotUser.Status = UpdateUser.Status;
                     gotUser.Email = UpdateUser.Email;
                     gotUser.Password = UpdateUser.Password;
+                    gotUser.DepartmentId = UpdateUser.DepartmentId;
+                    gotUser.Acess = UpdateUser.Acess;
 
                     _context.Update(gotUser);
                     await _context.SaveChangesAsync();

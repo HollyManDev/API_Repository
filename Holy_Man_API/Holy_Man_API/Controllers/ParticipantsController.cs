@@ -56,8 +56,7 @@ namespace Holy_Man_API.Controllers
             return Ok(serviceResponse);
 
         }
-       
-
+      
       
     }
        

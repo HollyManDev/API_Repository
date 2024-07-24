@@ -2,6 +2,7 @@ using Holy_Man_API.Models;
 using Holy_Man_API.Services.All_User_Participants_Conversations;
 using Holy_Man_API.Services.ConversationParticipants;
 using Holy_Man_API.Services.ConversationService;
+using Holy_Man_API.Services.DepartmentService;
 using Holy_Man_API.Services.DocumentService;
 using Holy_Man_API.Services.MessageService;
 using Holy_Man_API.Services.UserContentService;
@@ -34,7 +35,7 @@ builder.Services.AddScoped<ConversationParticipantsInterface, ConversationPartic
 builder.Services.AddScoped<UserContentInterfacecs, UserContentService>();
 builder.Services.AddScoped<All_User_Conversation_Participnts_Services>();
 builder.Services.AddScoped<All_User_Conversation_Participnts_Interface, All_User_Conversation_Participnts_Services>();
-
+builder.Services.AddScoped<DepartmentInterface, DepartmentService>();
 // Configuração do DbContext para o Entity Framework Core
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {

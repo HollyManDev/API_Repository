@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Holy Man\\Desktop\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj": {}
+    "D:\\Projects\\C#\\API_Repository\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Holy Man\\Desktop\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj": {
+    "D:\\Projects\\C#\\API_Repository\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Holy Man\\Desktop\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj",
+        "projectUniqueName": "D:\\Projects\\C#\\API_Repository\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj",
         "projectName": "Holy_Man_API",
-        "projectPath": "C:\\Users\\Holy Man\\Desktop\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj",
-        "packagesPath": "C:\\Users\\Holy Man\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Holy Man\\Desktop\\Holy_Man_API\\Holy_Man_API\\obj\\",
+        "projectPath": "D:\\Projects\\C#\\API_Repository\\Holy_Man_API\\Holy_Man_API\\Holy_Man_API.csproj",
+        "packagesPath": "C:\\Users\\HOLY MAN\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\C#\\API_Repository\\Holy_Man_API\\Holy_Man_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Holy Man\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HOLY MAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -56,23 +56,27 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -98,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -11,6 +11,7 @@ namespace Holy_Man_API.Models
         }
 
         public DbSet<UserModel> Users { get; set; }
+        public DbSet<DepartmentModel> Departments { get; set; }
         public DbSet<MessageModel> Messages { get; set; }
         public DbSet<ConversationModel> Conversations { get; set; }
         public DbSet<ConversationParticipantsModel> ConversationParticipants { get; set; }

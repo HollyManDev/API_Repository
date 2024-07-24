@@ -33,9 +33,9 @@ namespace Holy_Man_API.Controllers
         }
 
         [HttpPut("DeleteUser")]
-        public async Task<ActionResult<ServiceResponse<List<UserModel>>>> InactivateUSER(int id)
-        {
-            ServiceResponse<List<UserModel>> serviceResponse = await _userInterface.InactivateUSER(id);
+        public async Task<ActionResult<ServiceResponse<List<UserModel>>>> InactivateUSER(UserView user)
+         {
+            ServiceResponse<List<UserModel>> serviceResponse = await _userInterface.InactivateUSER(user.Id);
 
             return Ok(serviceResponse);
 
