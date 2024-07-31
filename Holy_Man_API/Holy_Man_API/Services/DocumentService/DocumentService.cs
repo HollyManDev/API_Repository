@@ -37,6 +37,7 @@ namespace Holy_Man_API.Services.DocumentService
                     ConversationId = id,
                     status = true,
                     UserId = userId,
+                    doawloaded = false,
                 };
 
                 var directoryPath = Path.Combine(Directory.GetCurrentDirectory(), "UploadedDocuments");
@@ -123,11 +124,20 @@ namespace Holy_Man_API.Services.DocumentService
                     serviceResponse.Success = false;
                     return serviceResponse;
                 }
+                else
+                {
+                    var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
 
-                var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+                    document.doawloaded = true;
 
-                serviceResponse.Data = fileStream;
-                serviceResponse.menssage = "Document retrieved successfully for download.";
+                    _context.Documents.Update(document);
+                    await _context.SaveChangesAsync();
+
+                    serviceResponse.Data = fileStream;
+                    serviceResponse.menssage = "Document retrieved successfully for download.";
+
+                }
+              
             }
             catch (Exception ex)
             {

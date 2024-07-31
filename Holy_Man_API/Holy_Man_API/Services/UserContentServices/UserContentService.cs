@@ -32,7 +32,7 @@ namespace Holy_Man_API.Services.UserContentService
                                               on conv.Id equals cp2.ConversationId
                                           where cp1.UserId == userId
                                               && cp2.UserId == participantId
-                                              && conv.status == true
+                                              && conv.status == true && conv.type != "group"
                                           select conv)
                                           .FirstOrDefaultAsync();
 
@@ -69,5 +69,56 @@ namespace Holy_Man_API.Services.UserContentService
 
             return serviceResponse;
         }
+        public async Task<ServiceResponse<UserContent>> GetGroupContent(int conversationId)
+        {
+            var serviceResponse = new ServiceResponse<UserContent>();
+
+            try
+            {
+                // Consultar a conversa com o ID fornecido
+                var conversation = await _context.Conversations
+                                                 .Where(conv => conv.Id == conversationId)
+                                                 .FirstOrDefaultAsync();
+
+                if (conversation == null)
+                {
+                    serviceResponse.menssage = "Conversation not found.";
+                    serviceResponse.Success = false;
+                    return serviceResponse;
+                }
+
+                // Obter mensagens para a conversa
+                var messages = await _context.Messages
+                                             .Where(m => m.ConversationId == conversationId)
+                                             .ToListAsync();
+
+                // Obter documentos para a conversa
+                var documents = await _context.Documents
+                                              .Where(d => d.ConversationId == conversationId)
+                                              .ToListAsync();
+
+                // Criar UserContent com os dados da conversa
+                var userContent = new UserContent
+                {
+                    UserId = 0, // Este campo não será utilizado, mas mantido para compatibilidade
+                    ParticipantId = 0, // Este campo não será utilizado, mas mantido para compatibilidade
+                    ConversationId = conversationId,
+                    Messages = messages,
+                    Documents = documents
+                };
+
+                // Configurar o ServiceResponse
+                serviceResponse.Data = userContent;
+                serviceResponse.Success = true;
+            }
+            catch (Exception ex)
+            {
+                serviceResponse.menssage = $"Error retrieving conversation content: {ex.Message}";
+                serviceResponse.Success = false;
+            }
+
+            return serviceResponse;
+        }
+
     }
 }

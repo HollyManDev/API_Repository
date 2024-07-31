@@ -32,7 +32,7 @@ namespace Holy_Man_API.Services.All_User_Participants_Conversations
                                          {
                                              Conversation = conversation,
                                              Participants = _context.ConversationParticipants
-                                                                 .Where(cp => cp.ConversationId == conversation.Id)
+                                                                 .Where(cp => cp.ConversationId == conversation.Id && conversation.type != "group")
                                                                  .Select(cp => cp.User)
                                                                  .ToList()
                                          })

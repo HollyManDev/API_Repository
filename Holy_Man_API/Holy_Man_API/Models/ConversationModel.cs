@@ -11,8 +11,10 @@ namespace Holy_Man_API.Models
         public string Title { get; set; } // Nome opcional da conversa
         public DateTime CreatedAt { get; set; }
         public bool status { get; set; }
+        public string type { get; set; }
 
-       
+
+
 
     }
 }

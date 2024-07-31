@@ -12,6 +12,7 @@ namespace Holy_Man_API.Models
         public string FilePath { get; set; }
         public DateTime UploadedAt { get; set; }
         public bool status { get; set; }
+        public bool doawloaded { get; set; }
         public int ConversationId { get; set; }
         [ForeignKey("ConversationId")]
      

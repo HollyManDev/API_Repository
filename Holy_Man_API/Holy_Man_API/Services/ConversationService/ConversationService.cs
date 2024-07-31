@@ -85,7 +85,8 @@ namespace Holy_Man_API.Services.ConversationService
                 {
                     Title = newConversation.Title,
                     CreatedAt = DateTime.Now,
-                    status = true
+                    status = true,
+                    type = newConversation.type
                 };
 
                 _context.Conversations.Add(conversation);

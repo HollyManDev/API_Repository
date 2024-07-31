@@ -11,6 +11,7 @@ namespace Holy_Man_API.Models
         public string Content { get; set; }
         public DateTime SentAt { get; set; }
         public bool status { get; set; }
+        public bool seen { get; set; }
 
         // Chave estrangeira para a Conversa
         public int ConversationId { get; set; }

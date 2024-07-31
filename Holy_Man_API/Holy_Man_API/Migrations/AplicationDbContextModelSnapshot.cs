@@ -40,6 +40,10 @@ namespace Holy_Man_API.Migrations
                     b.Property<bool>("status")
                         .HasColumnType("bit");
 
+                    b.Property<string>("type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Conversations");
@@ -119,6 +123,9 @@ namespace Holy_Man_API.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("doawloaded")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("status")
                         .HasColumnType("bit");
 
@@ -152,6 +159,9 @@ namespace Holy_Man_API.Migrations
 
                     b.Property<int?>("UserModelId")
                         .HasColumnType("int");
+
+                    b.Property<bool>("seen")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("status")
                         .HasColumnType("bit");

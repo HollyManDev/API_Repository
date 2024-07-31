@@ -51,6 +51,12 @@ namespace Holy_Man_API.Controllers
             var serviceResponse = await _messageService.UpdateMessage(updatedMessage);
             return Ok(serviceResponse);
         }
+        [HttpPut("changeStatus")]
+        public async Task<ActionResult<ServiceResponse<List<MessageModel>>>> changeStatus(MessageView updatedMessage)
+        {
+            var serviceResponse = await _messageService.ChangeStatus( updatedMessage);
+            return Ok(serviceResponse);
+        }
 
         [HttpPost]
         public async Task<ActionResult<ServiceResponse<List<MessageModel>>>> CreateMessage(MessageView newMessage)

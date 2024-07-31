@@ -26,5 +26,16 @@ namespace Holy_Man_API.Controllers
             }
             return Ok(userContent);
         }
+        [HttpGet("{userId}/GroupContent")]
+        public async Task<IActionResult> GetGroupContent(int userId)
+        {
+            var userContent = await _userContentService.GetGroupContent(userId);
+            if (!userContent.Success)
+            {
+
+                NotFound(userContent);
+            }
+            return Ok(userContent);
+        }
     }
 }
