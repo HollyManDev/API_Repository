@@ -16,8 +16,7 @@ namespace Holy_Man_API.Services.DocumentService
         {
             _context = context;
         }
-
-        public async Task<ServiceResponse<DocumentModel>> UploadDocument(IFormFile file, int id, int userId)
+        public async Task<ServiceResponse<DocumentModel>> UploadDocument(IFormFile file, int conversationId, int userId)
         {
             var serviceResponse = new ServiceResponse<DocumentModel>();
 
@@ -34,7 +33,7 @@ namespace Holy_Man_API.Services.DocumentService
                 {
                     FileName = Path.GetFileName(file.FileName),
                     UploadedAt = DateTime.Now,
-                    ConversationId = id,
+                    ConversationId = conversationId,
                     status = true,
                     UserId = userId,
                     doawloaded = false,
@@ -42,7 +41,6 @@ namespace Holy_Man_API.Services.DocumentService
 
                 var directoryPath = Path.Combine(Directory.GetCurrentDirectory(), "UploadedDocuments");
 
-                // Verificar se o diretório existe; se não, criar
                 if (!Directory.Exists(directoryPath))
                 {
                     Directory.CreateDirectory(directoryPath);
@@ -50,21 +48,19 @@ namespace Holy_Man_API.Services.DocumentService
 
                 var filePath = Path.Combine(directoryPath, document.FileName);
 
-                // Salvar o arquivo no disco
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
                     await file.CopyToAsync(stream);
                 }
 
-                // Atualizar o caminho do arquivo no objeto document
                 document.FilePath = filePath;
 
-                // Salvar informações do documento no banco de dados
                 _context.Documents.Add(document);
                 await _context.SaveChangesAsync();
 
                 serviceResponse.Data = document;
                 serviceResponse.menssage = "Document uploaded successfully.";
+                serviceResponse.Success = true;
             }
             catch (Exception ex)
             {
@@ -74,6 +70,7 @@ namespace Holy_Man_API.Services.DocumentService
 
             return serviceResponse;
         }
+
 
         public async Task<ServiceResponse<DocumentModel>> GetDocument(int id)
         {
@@ -142,6 +139,41 @@ namespace Holy_Man_API.Services.DocumentService
             catch (Exception ex)
             {
                 serviceResponse.menssage = $"Error retrieving document for download: {ex.Message}";
+                serviceResponse.Success = false;
+            }
+
+            return serviceResponse;
+        }
+        public async Task<ServiceResponse<DocumentModel>> InactivateDocument(int id)
+        {
+            var serviceResponse = new ServiceResponse<DocumentModel>();
+
+            try
+            {
+                var gotMessage = await _context.Documents.FirstOrDefaultAsync(x => x.Id == id);
+
+                if (gotMessage == null)
+                {
+                    serviceResponse.Data = null;
+                    serviceResponse.menssage = "Message not found!";
+                    serviceResponse.Success = false;
+                }
+                else
+                {
+                    gotMessage.status = false;
+                    _context.Documents.Update(gotMessage);
+                    await _context.SaveChangesAsync();
+
+                    var DeleteMessage = await _context.Documents.FirstOrDefaultAsync(x => x.Id == gotMessage.Id);
+
+                    serviceResponse.Data = DeleteMessage;
+                    serviceResponse.menssage = "Message inactivated successfully!";
+                    serviceResponse.Success = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                serviceResponse.menssage = ex.Message;
                 serviceResponse.Success = false;
             }
 

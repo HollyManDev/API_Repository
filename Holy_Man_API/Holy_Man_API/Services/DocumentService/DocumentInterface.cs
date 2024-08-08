@@ -10,5 +10,6 @@ namespace Holy_Man_API.Services.DocumentService
         Task<ServiceResponse<DocumentModel>> UploadDocument(IFormFile file, int id, int userId);
         Task<ServiceResponse<DocumentModel>> GetDocument(int id);
         Task<ServiceResponse<FileStream>> DownloadDocument(int id);
+        Task<ServiceResponse<DocumentModel>> InactivateDocument(int id);
     }
 }

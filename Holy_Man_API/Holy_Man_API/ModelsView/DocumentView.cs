@@ -6,5 +6,6 @@
         public int ConversationId { get; set; }
         public bool doawloaded { get; set; }    
         public int UserId { get; set; }
+        public int Id { get; set; }
     }
 }

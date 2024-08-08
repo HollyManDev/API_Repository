@@ -32,6 +32,13 @@ namespace Holy_Man_API.Controllers
             return Ok(await _ParticipantInterface.GetConversationsParticipants());
         }
 
+        [HttpPost("peguei")]
+        public async Task<ActionResult<ServiceResponse<int>>> GetConversationId([FromBody] ConversationParticipantsView p)
+        {
+            var result = await _ParticipantInterface.GetConversationId(p.UserId, p.participantId);
+            return Ok(result);
+        }
+
         //[HttpPut]
         //public async Task<ActionResult<ServiceResponse<List<ConversationParticipantsModel>>>> UpdateConversationParticipants(ConversationParticipantsView updatedParticipant)
         //{

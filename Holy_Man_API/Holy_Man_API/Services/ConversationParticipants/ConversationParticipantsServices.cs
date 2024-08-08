@@ -117,6 +117,41 @@ namespace Holy_Man_API.Services.ConversationParticipants
 
             return serviceResponse;
         }
+        public async Task<ServiceResponse<int>> GetConversationId(int userId, int participantId)
+        {
+            var serviceResponse = new ServiceResponse<int>();
+
+            try
+            {
+                // Verifica se existe uma conversa que inclui tanto o userId quanto o participantId
+                var conversation = await _context.ConversationParticipants
+                    .Where(x => x.ConversationId == (from c in _context.ConversationParticipants
+                                                     where (c.UserId == userId || c.UserId == participantId)
+                                                     group c by c.ConversationId into g
+                                                     where g.Count() > 1
+                                                     select g.Key).FirstOrDefault())
+                    .FirstOrDefaultAsync();
+
+                if (conversation == null)
+                {
+                    serviceResponse.menssage = "Conversation not found.";
+                    serviceResponse.Success = false;
+                }
+                else
+                {
+                    serviceResponse.Data = conversation.ConversationId;
+                    serviceResponse.Success = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                serviceResponse.menssage = $"Error retrieving conversation: {ex.Message}";
+                serviceResponse.Success = false;
+            }
+
+            return serviceResponse;
+        }
+
 
         public async Task<ServiceResponse<List<ConversationParticipantsModel>>> GetConversationsParticipants()
         {

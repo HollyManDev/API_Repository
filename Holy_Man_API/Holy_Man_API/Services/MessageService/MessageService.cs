@@ -90,6 +90,49 @@ namespace Holy_Man_API.Services.MessageService
 
             return serviceResponse;
         }
+        public async Task<ServiceResponse<List<MessageModel>>> ChangeStatusGroup(MessageView mess)
+        {
+            var serviceResponse = new ServiceResponse<List<MessageModel>>();
+
+            try
+            {
+                var messages = await _context.Messages
+                    .Where(m => m.ConversationId == mess.idConversation)
+                    .ToListAsync();
+
+                if (messages == null || !messages.Any())
+                {
+                    serviceResponse.Data = null;
+                    serviceResponse.menssage = "No messages found for the specified conversation!";
+                    serviceResponse.Success = false;
+                }
+                else
+                {
+                    foreach (var message in messages)
+                    {
+                        if (message.UserId != mess.UserId)
+                        {
+                            message.seen = true;
+                        }
+
+                    }
+
+                    _context.Messages.UpdateRange(messages);
+                    await _context.SaveChangesAsync();
+
+                    serviceResponse.Data = messages;
+                    serviceResponse.menssage = "Messages updated successfully!";
+                    serviceResponse.Success = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                serviceResponse.menssage = ex.Message;
+                serviceResponse.Success = false;
+            }
+
+            return serviceResponse;
+        }
 
         public async Task<ServiceResponse<MessageModel>> CreateMessage(MessageView newMessage)
         {
@@ -193,9 +236,9 @@ namespace Holy_Man_API.Services.MessageService
             return serviceResponse;
         }
 
-        public async Task<ServiceResponse<List<MessageModel>>> InactivateMessage(int id)
+        public async Task<ServiceResponse<MessageModel>> InactivateMessage(int id)
         {
-            var serviceResponse = new ServiceResponse<List<MessageModel>>();
+            var serviceResponse = new ServiceResponse<MessageModel>();
 
             try
             {
@@ -212,7 +255,10 @@ namespace Holy_Man_API.Services.MessageService
                     gotMessage.status = false;
                     _context.Messages.Update(gotMessage);
                     await _context.SaveChangesAsync();
-                    serviceResponse.Data = await _context.Messages.ToListAsync();
+
+                    var DeleteMessage = await _context.Messages.FirstOrDefaultAsync(x => x.Id == gotMessage.Id);
+
+                    serviceResponse.Data = DeleteMessage;
                     serviceResponse.menssage = "Message inactivated successfully!";
                     serviceResponse.Success = true;
                 }

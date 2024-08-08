@@ -8,7 +8,8 @@ public interface MessageInterface
     Task<ServiceResponse<MessageModel>> CreateMessage(MessageView newMessage);
     Task<ServiceResponse<MessageModel>> FindMessage(int id);
     Task<ServiceResponse<MessageModel>> UpdateMessage(MessageView UpdateMessage);
-    Task<ServiceResponse<List<MessageModel>>> InactivateMessage(int id);
+    Task<ServiceResponse<MessageModel>> InactivateMessage(int id);
     Task<ServiceResponse<List<MessageModel>>> ActivateMessage(int id);
     Task<ServiceResponse<List<MessageModel>>> ChangeStatus(MessageView mess); // Atualizado para ChangeStatus
+    Task<ServiceResponse<List<MessageModel>>> ChangeStatusGroup(MessageView mess); // Atualizado para ChangeStatus
 }

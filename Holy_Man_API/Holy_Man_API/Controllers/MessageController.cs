@@ -31,12 +31,13 @@ namespace Holy_Man_API.Controllers
             return Ok(serviceResponse);
         }
 
-        [HttpPut("Inactivate/{id}")]
-        public async Task<ActionResult<ServiceResponse<List<MessageModel>>>> DeactivateMessage(int id)
+        [HttpPut("Inactivate")]
+        public async Task<ActionResult<ServiceResponse<MessageModel>>> DeactivateMessage(MessageView message)
         {
-            var serviceResponse = await _messageService.InactivateMessage(id);
+            var serviceResponse = await _messageService.InactivateMessage(message.Id);
             return Ok(serviceResponse);
         }
+
 
         [HttpPut("Activate/{id}")]
         public async Task<ActionResult<ServiceResponse<List<MessageModel>>>> ActivateMessage(int id)
@@ -57,7 +58,12 @@ namespace Holy_Man_API.Controllers
             var serviceResponse = await _messageService.ChangeStatus( updatedMessage);
             return Ok(serviceResponse);
         }
-
+        [HttpPut("changeStatusGroup")]
+        public async Task<ActionResult<ServiceResponse<List<MessageModel>>>> changeStatusGroup(MessageView updatedMessage)
+        {
+            var serviceResponse = await _messageService.ChangeStatusGroup(updatedMessage);
+            return Ok(serviceResponse);
+        }
         [HttpPost]
         public async Task<ActionResult<ServiceResponse<List<MessageModel>>>> CreateMessage(MessageView newMessage)
         {

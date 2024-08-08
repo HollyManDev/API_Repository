@@ -2,6 +2,7 @@
 using Holy_Man_API.ModelsView;
 using Holy_Man_API.ServerResponse;
 using Holy_Man_API.Services.DocumentService;
+using Holy_Man_API.Services.MessageService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -20,6 +21,18 @@ namespace Holy_Man_API.Controllers
         {
             _documentService = documentService;
         }
+
+        [HttpPut("Inactivate")]
+        public async Task<ActionResult<ServiceResponse<DocumentModel>>> InactivateDocument([FromBody] DocumentViewUpdates doc)
+        {
+            var serviceResponse = await _documentService.InactivateDocument(doc.Id);
+            if (!serviceResponse.Success)
+            {
+                return NotFound(serviceResponse);
+            }
+            return Ok(serviceResponse);
+        }
+
 
         [HttpPost("upload")]
         public async Task<ActionResult<ServiceResponse<DocumentModel>>> UploadDocument([FromForm] DocumentView documentView)
@@ -49,6 +62,8 @@ namespace Holy_Man_API.Controllers
 
             return Ok(serviceResponse);
         }
+
+
         [HttpGet("download/{id}")]
         public async Task<IActionResult> DownloadDocument(int id)
         {
@@ -62,6 +77,7 @@ namespace Holy_Man_API.Controllers
             var fileStream = serviceResponse.Data;
             return File(fileStream, "application/octet-stream", "downloaded_document.txt"); // Aqui você pode ajustar o nome do arquivo conforme necessário
         }
+      
     }
 }
 

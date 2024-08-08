@@ -50,10 +50,10 @@ namespace Holy_Man_API.Services.UserContentService
                     ParticipantId = participantId,
                     ConversationId = conversation.Id, // Adicionando o ID da conversa
                     Messages = await _context.Messages
-                                        .Where(m => m.ConversationId == conversation.Id)
+                                        .Where(m => m.ConversationId == conversation.Id && m.status == true)
                                         .ToListAsync(),
                     Documents = await _context.Documents
-                                        .Where(d => d.ConversationId == conversation.Id)
+                                        .Where(d => d.ConversationId == conversation.Id && d.status == true)
                                         .ToListAsync()
                     // Adicione mais lógica conforme necessário para recuperar outros dados da conversa
                 };
@@ -89,12 +89,12 @@ namespace Holy_Man_API.Services.UserContentService
 
                 // Obter mensagens para a conversa
                 var messages = await _context.Messages
-                                             .Where(m => m.ConversationId == conversationId)
+                                             .Where(m => m.ConversationId == conversationId && m.status == true)
                                              .ToListAsync();
 
                 // Obter documentos para a conversa
                 var documents = await _context.Documents
-                                              .Where(d => d.ConversationId == conversationId)
+                                              .Where(d => d.ConversationId == conversationId && d.status == true)
                                               .ToListAsync();
 
                 // Criar UserContent com os dados da conversa

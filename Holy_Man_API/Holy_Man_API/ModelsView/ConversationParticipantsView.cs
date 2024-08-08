@@ -3,6 +3,7 @@
     public class ConversationParticipantsView
     {
         public int UserId { get; set; }
+        public int participantId { get; set; }
         public int ConversationId { get; set; }
         public bool status { get; set; }
 
